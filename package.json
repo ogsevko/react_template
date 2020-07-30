@@ -46,9 +46,16 @@
     "@mate-academy/stylelint-config": "0.0.9",
     "concurrently": "^5.2.0",
     "gh-pages": "^3.1.0",
+    "husky": "^4.2.5",
     "node-sass": "^4.14.1",
     "parcel": "^1.12.4",
     "stylelint": "^13.6.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
   },
   "keywords": [],
   "author": "",
