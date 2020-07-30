@@ -14,6 +14,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint:js": "eslint ./src",
+    "lint:css": "stylelint ./src",
+    "lint:html": "linthtml ./src",
+    "lint": "concurrently \"npm run lint:js\" \"npm run lint:css\" \"npm run lint:html\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -37,9 +41,14 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "devDependencies": {
+    "@linthtml/linthtml": "^0.4.2",
+    "@mate-academy/linthtml-config": "0.0.1",
+    "@mate-academy/stylelint-config": "0.0.9",
+    "concurrently": "^5.2.0",
     "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",
-    "parcel": "^1.12.4"
+    "parcel": "^1.12.4",
+    "stylelint": "^13.6.1"
   },
   "keywords": [],
   "author": "",
