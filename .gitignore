@@ -4,12 +4,21 @@
 /node_modules
 /.pnp
 .pnp.js
+.cache
+.dist
 
 # testing
 /coverage
 
 # production
 /build
+
+# IDE
+.vscode
+.idea
+
+# Mac OS
+.DS_Store
 
 # misc
 .DS_Store
